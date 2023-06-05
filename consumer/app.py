@@ -78,4 +78,4 @@ def obter_mensagem():
 
 # Executar o servidor Flask
 if __name__ == '__main__':
-    app.run()
+    app.run(port=8000)
