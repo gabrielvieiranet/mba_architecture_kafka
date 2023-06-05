@@ -41,7 +41,8 @@ def callback(err, msg):
     if err is not None:
         print(f'Erro ao enviar a mensagem: {err}')
     else:
-        print(f'Mensagem enviada: {msg.value().decode("utf-8")}')
+        print(
+            f'Mensagem enviada: {msg.value().decode("utf-8")}, Offset: {msg.offset()}')
 
 
 # Iniciar o envio de mensagens
