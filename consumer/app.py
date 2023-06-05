@@ -49,6 +49,7 @@ def consumir_mensagens():
                 'valor': mensagem.value().decode('utf-8') if mensagem.value() is not None else None
             }
             mensagens.append(mensagem_dict)
+            print(mensagem.value().decode('utf-8'))
 
 
 # Iniciar a thread do consumidor
